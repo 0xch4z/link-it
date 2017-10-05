@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		56CC5C6C1F85F59D0008B859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC5C6B1F85F59D0008B859 /* AppDelegate.swift */; };
-		56CC5C6E1F85F59D0008B859 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC5C6D1F85F59D0008B859 /* ViewController.swift */; };
-		56CC5C701F85F59D0008B859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC5C6F1F85F59D0008B859 /* Assets.xcassets */; };
 		56CC5C731F85F59D0008B859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CC5C711F85F59D0008B859 /* Main.storyboard */; };
+		56CC5C7F1F8605680008B859 /* String+IsValidURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC5C7E1F8605680008B859 /* String+IsValidURL.swift */; };
+		56CC5C811F8607C80008B859 /* NSUserNotification+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56CC5C801F8607C80008B859 /* NSUserNotification+Notifications.swift */; };
+		56CC5C881F860D270008B859 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CC5C871F860D100008B859 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56CC5C681F85F59D0008B859 /* Link It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Link It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		56CC5C6B1F85F59D0008B859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56CC5C6D1F85F59D0008B859 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56CC5C6F1F85F59D0008B859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56CC5C721F85F59D0008B859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56CC5C741F85F59D0008B859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56CC5C751F85F59D0008B859 /* Link_It.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Link_It.entitlements; sourceTree = "<group>"; };
+		56CC5C7E1F8605680008B859 /* String+IsValidURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+IsValidURL.swift"; sourceTree = "<group>"; };
+		56CC5C801F8607C80008B859 /* NSUserNotification+Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSUserNotification+Notifications.swift"; sourceTree = "<group>"; };
+		56CC5C871F860D100008B859 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +55,23 @@
 		56CC5C6A1F85F59D0008B859 /* Link It */ = {
 			isa = PBXGroup;
 			children = (
+				56CC5C821F8608E00008B859 /* Helpers */,
 				56CC5C6B1F85F59D0008B859 /* AppDelegate.swift */,
-				56CC5C6D1F85F59D0008B859 /* ViewController.swift */,
-				56CC5C6F1F85F59D0008B859 /* Assets.xcassets */,
 				56CC5C711F85F59D0008B859 /* Main.storyboard */,
 				56CC5C741F85F59D0008B859 /* Info.plist */,
 				56CC5C751F85F59D0008B859 /* Link_It.entitlements */,
+				56CC5C871F860D100008B859 /* Media.xcassets */,
 			);
 			path = "Link It";
+			sourceTree = "<group>";
+		};
+		56CC5C821F8608E00008B859 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				56CC5C7E1F8605680008B859 /* String+IsValidURL.swift */,
+				56CC5C801F8607C80008B859 /* NSUserNotification+Notifications.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CC5C701F85F59D0008B859 /* Assets.xcassets in Resources */,
+				56CC5C881F860D270008B859 /* Media.xcassets in Resources */,
 				56CC5C731F85F59D0008B859 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,8 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CC5C6E1F85F59D0008B859 /* ViewController.swift in Sources */,
+				56CC5C811F8607C80008B859 /* NSUserNotification+Notifications.swift in Sources */,
 				56CC5C6C1F85F59D0008B859 /* AppDelegate.swift in Sources */,
+				56CC5C7F1F8605680008B859 /* String+IsValidURL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +281,7 @@
 				DEVELOPMENT_TEAM = U4T3RQVCBL;
 				INFOPLIST_FILE = "Link It/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CharlesKenney.Link-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -285,6 +298,7 @@
 				DEVELOPMENT_TEAM = U4T3RQVCBL;
 				INFOPLIST_FILE = "Link It/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CharlesKenney.Link-It";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

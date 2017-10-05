@@ -4,3 +4,6 @@
 <p align="center">
     <img src="assets/demo.gif">
 </p>
+
+<h2>License</h2>
+<p>MIT &copy; Charles Kenney</p>
